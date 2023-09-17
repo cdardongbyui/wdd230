@@ -1,16 +1,55 @@
-header {
-    background: lightpink;
-    padding: 2rem;
-    grid-column: 1 / 3;
+
+
+  .header_photo{
+    background-color: #36516c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    font-size: 50px;
   }
 
+  header h5{
+    padding-right: 200px;
+  }
+
+  #initial-image{
+   width: 200px; 
+   padding: 30px;  
+   padding-left: 200px; 
+
+  } 
+
+  
+  
+  .vertical-menu a {
+    background-color: #000000;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+
+  
+  
+  
+ 
+
+
 section{
-    border: 2px solid red;
+    border: 2px solid #ff0000;
     padding: 10px;
     border-radius: 25px;
 }
   nav {
-    background: black;
+    background: #000000;
     padding: 2rem;
     grid-column: 1 / 3;
   }
