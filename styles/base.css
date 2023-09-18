@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Rock+Salt&display=swap');
 
   .header_photo{
     background-color: #36516c;
@@ -7,6 +7,7 @@
     align-items: center;
     color: #ffffff;
     font-size: 50px;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
   }
 
   header h5{
@@ -19,7 +20,11 @@
    padding-left: 200px; 
 
   } 
-
+  nav {
+    background: #000000;
+    padding: 2rem;
+    grid-column: 1 / 3;
+  }
   
   
   .vertical-menu a {
@@ -42,22 +47,65 @@
     border-bottom: 2px solid #000000;
     margin: 10px;
   }
-  
-  
- 
-
 
 section{
-    border: 2px solid #ff0000;
-    padding: 10px;
-    border-radius: 25px;
+    border: 2px solid #000000;
+    margin: 10px;
+    border-radius: 8px;   
 }
-  nav {
-    background: #000000;
-    padding: 2rem;
-    grid-column: 1 / 3;
-  }
+
 
  .title-card{
     background: #1D4D72;
+    text-align: center;
+    padding: 3px;   
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .title-card h3{
+    color: #ffffff;
+  }
+
+  .activities a{
+    font-size: 20px;
+  }
+
+  .card-information{
+  text-align: center;
+   
+  }
+
+  .weather{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .items-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer{
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #1D4D72;
+  }
+
+  .flag{
+    width: 60px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #last-modified{
+    color: #FFFE30;
   }
