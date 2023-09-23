@@ -1,0 +1,60 @@
+@media screen and (min-width: 0px) {
+   
+    main{
+       grid-template-columns: 1fr ; 
+    }
+    
+    header{
+        background-color: #343535;
+    }
+
+    footer{
+        background-color: #0076B6;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+   
+    main{
+       grid-template-columns: 1fr 1fr ; 
+    }
+    
+    header{
+        background-color: #000000;
+    }
+
+    footer{
+        background-color: #000000;
+        display: block;
+        text-align: center;
+    }
+   
+}
+
+@media screen and (min-width: 900px) {
+   
+    main{
+       grid-template-columns: 1fr 1fr 1fr ; 
+    }
+    
+    header{
+        background-color: #0076B6;
+    }
+
+    footer{
+        background-color: #343535;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+   
+}
+
+
+
+
