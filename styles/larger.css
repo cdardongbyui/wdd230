@@ -5,4 +5,42 @@
 	nav ul li {
 		flex: 1 1 100%;
 	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	section iframe{
+		display: flex;
+	  }
+	.navigation li {
+		display: flex;}
+
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		background-color: #0076B6;
+		color: #fff;
+	}
+	
+	.navigation li a {
+		display: block;
+		padding: 1rem;
+		text-align: center;
+		text-decoration: none;
+		color: #fff;
+	}
+	.navigation li a:hover {
+		background-color: #ffffff;
+		color: #0076B6;
+		font-weight: 700;
+	}
+
+	main{
+		grid-template-columns: 1fr ; 
+	 }
+	 
+
 }
+
