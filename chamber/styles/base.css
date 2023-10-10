@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Open%20Sans&display=swap');
+
+
+:root{
+  --heading-font: "Montserrat";
+  --paragraph-font: "Montserrat", Helvetica, sans-serif;
+  --titles-font: "Open Sans";
+
+  --primary-color: #ffffff   ;
+  --secondary-color: #7F2629;
+  --accent1-color: #171717;
+  --accent2-color: #171717;
+}
+/* Applies to everything in the document */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* HEADER */
+header {
+    background-color: #ffffff;
+    color:#7F2629;
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+
+#logo img {
+    /*width: 300px;*/
+    padding: 20px;
+}
+
+nav {
+    margin: auto;
+    grid-column: 1/3;
+}
+
+nav li {
+    display: none;
+}
+
+nav a {
+    color: #7F2629;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #7F2629;
+    background-color: #E5E5E5;
+}
+
+#hamburger {
+    color: #e5e5e5;
+    text-decoration: none;
+    grid-column: 2;
+    text-align: right;
+    margin: auto;
+    font-size: 3em;
+}
+
+.responsive  li{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 40px;
+}
+
+.socials img {
+    width: 24px;
+}
+
+.socials {
+    display: block;
+    grid-row: 2;
+    grid-column: 1/3;
+    margin: auto;
+}
+
+.button-box{
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #E5E5E5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  
+  
+}
+
+.button-box:hover{
+    background-color: #7F2629;
+    color: #ffffff;
+}
+
+.button-box a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.button-box a:hover{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+  }
+  
+  .grid-container > section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    
+  }
+
+  br {
+    height: 3px;
+    margin: 35px 0;
+    background: gray;
+  }
+
+  .item1 {
+    grid-column: 1/ 7;
+  }
+  .item2 {
+    grid-column: 1/ 7;
+  }
+  .item3 {
+    grid-column: 1 / 7;
+  }
+  
+  .item5 {
+    grid-column: 1 / 7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+    text-align: center;
+    font-family:var(--heading-font);
+  }
+  .item6 {
+    grid-column: 1 / 7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .item4 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family:var(--heading-font);
+    grid-column: 1 / 7;
+        
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card a {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+p {
+    padding: 1rem;
+}
+
+.image-card{
+    width:80% ;
+}
+
+.phara-card{
+    font-size: 1.5rem; 
+}
+
+.card-event {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.card-event button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #7F2629;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card-event a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.card-event button:hover, a:hover {
+  opacity: 0.7;
+}
+.footer-container{
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+    background-color: #ffffff;
+}
+
+.footer1{
+    grid-column: 1 / 7;
+    font-size: 1rem;
+        align-content: center;
+        color: #7F2629;
+         font-weight: bold;
+         text-align: center;
+         align-items: center;
+    
+}
+
+.footer2{
+    grid-column: 1 / 7;
+    font-size: 1rem;
+        align-content: center;
+        color: #7F2629;
+         font-weight: bold;
+         text-align: center;
+         align-items: center;
+    
+}
+
+.footer3{
+    grid-column: 1 / 7;
+    font-size: 1rem;
+        align-content: center;
+        color: #7F2629;
+         font-weight: bold;
+         text-align: center;
+         align-items: center;
+    
+}
