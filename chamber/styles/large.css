@@ -94,10 +94,25 @@
             justify-content: center;
         
         }
+
         .button-box{
             text-align: center;
-        
-        }
+            padding: 10px 60px;
+            color: #fff;
+            border: 2px solid #fff;
+            transition: background-color 0.2s ease-out,
+  color 0.2s ease-out;
+          }
+          
+          .button-box:hover,
+          .button-box:active {
+            background-color: #fff;
+            color: #000;
+            transition: background-color 0.3s ease-in,
+                        color 0.3s ease-in;
+          }
+          
+       
 
        
 

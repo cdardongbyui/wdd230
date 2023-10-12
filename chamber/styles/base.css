@@ -85,34 +85,41 @@ nav a:hover {
 
 .button-box{
   text-align: center;
-  padding: 10px 20px;
-  background-color: #E5E5E5;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  padding: 10px 60px;
+  color: #fff;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
   cursor: pointer;
   font-family: var(--heading-font);
   font-weight: bold;
-  
-  
-}
+  cursor: pointer;}
 
-.button-box:hover{
-    background-color: #7F2629;
-    color: #ffffff;
-}
+  .button-box:hover,
+          .button-box:active {
+            background-color: #888182;
+            color: #ffffff;
+            transition: background-color 0.3s ease-in,
+                        color 0.3s ease-in;
+                        border: 2px solid #888182;
+          }
 
 .button-box a{
-    text-decoration: none;
-    color: black;
-    
+  color: #000000;
+  text-decoration: none;
+}
+.button-box a:hover{
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.button-box a:hover{
-    text-decoration: none;
-    color: black;
-    
-}
+
+
+
+
+
 
 
 
