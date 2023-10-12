@@ -25,6 +25,7 @@ header {
    grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
     margin: auto;
+    background-color: #E5E5E5;
 }
 
 
@@ -36,6 +37,7 @@ header {
 nav {
     margin: auto;
     grid-column: 1/3;
+   
 }
 
 nav li {
@@ -48,11 +50,17 @@ nav a {
     font-size: 1.5em;
     text-align: center;
     font-weight: 500;
+    transition: background-color 0.2s ease-out,
+    color 0.2s ease-out;
 }
 
 nav a:hover {
-    color: #7F2629;
-    background-color: #E5E5E5;
+    color: #000000;
+    background-color: #bebebe;
+    font-weight: bold;
+    padding: 0.5rem  1rem;
+    border-radius: 1em;
+    
 }
 
 #hamburger {
@@ -253,7 +261,7 @@ p {
     
     display: grid;
     grid-template-columns: auto auto auto auto auto auto ;
-    background-color: #ffffff;
+    background-color: #E5E5E5;
 }
 
 .footer1{
@@ -264,6 +272,7 @@ p {
          font-weight: bold;
          text-align: center;
          align-items: center;
+         padding-top: 20px;
     
 }
 
