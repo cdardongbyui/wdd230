@@ -28,7 +28,13 @@ header {
     background-color: #E5E5E5;
 }
 
-
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
 #logo img {
     /*width: 300px;*/
     padding: 20px;
@@ -143,6 +149,7 @@ nav a:hover {
     gap: 10px;
     background-color: #ffffff;
     padding: 10px;
+   
   }
   
   .grid-container > section {
@@ -261,7 +268,7 @@ p {
     
     display: grid;
     grid-template-columns: auto auto auto auto auto auto ;
-    background-color: #E5E5E5;
+   
 }
 
 .footer1{

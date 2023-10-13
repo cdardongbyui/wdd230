@@ -14,7 +14,7 @@ const getWeather = async () => {
     document.querySelector('figcaption').textContent = desc;
 
     let wind = jsObject.wind.speed;
-    document.querySelector('#wind').textContent = wind;
+   
 
     
 };
