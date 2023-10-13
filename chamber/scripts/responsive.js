@@ -29,7 +29,7 @@ modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🌃")) {
 		main.style.background = "#00ddd0";
 		main.style.color = "#ffffff";
-        header.style.background='#000';
+        header.style.background='#8e8a8a';
         header.style.color = '#fff';
         
         herobox.style.background='#000000';
