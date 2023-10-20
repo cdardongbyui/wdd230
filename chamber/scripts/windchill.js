@@ -14,9 +14,11 @@ const getWeather = async () => {
     document.querySelector('figcaption').textContent = desc;
 
     let wind = jsObject.wind.speed;
-   
+    document.querySelector('#wind').textContent = wind;
 
-    
+    let temp_int = parseInt(temp);
+    let wind_int = parseInt(wind);
+    windchill(temp_int, wind_int);
 };
 
 const kelvinToFahrenheit = (kelvin) => {
@@ -24,6 +26,18 @@ const kelvinToFahrenheit = (kelvin) => {
     return f.toFixed(0);
 }
 
+const windchill = (temp, wind) => {
+    const windchill = document.querySelector('#windchill');
+    const windDegree = document.querySelector('#windDegree');
 
+    windchill.textContent = 'N/A';
+
+    if (temp <= 50 && wind >= 3) {
+        let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(wind,0.16)) + (0.4275*temp*Math.pow(wind,0.16)));
+        windchill.textContent = chill.toFixed(0);
+        windDegree.innerHTML = '&#8457;';
+    }
+    
+}
 
 getWeather();

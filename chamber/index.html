@@ -30,7 +30,7 @@
         </div>
         <!-- Navigation menu goes here -->
         <div id="logo">
-            <a href="index.html"><img src="images/chamber_logo.png" alt="Pasco Chamber of Commerce Logo"></a>
+            <a href="index.html"><img src="images/chamber_logo.webp" alt="Pasco Chamber of Commerce Logo"></a>
             
         </div>
         <a href="#" id="hamburger">&#9776;</a>
@@ -48,14 +48,17 @@
             
         </section>
     </header>
+    
     <div id="hero">
         <div id="hero-box">
-            <img id="hero-img" src="images/office3.jpg" alt="People enjoying white water rafting">
+        <picture>
+          <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
+          <img srcset="images/wdd230-org-large.webp" src="https://byui-cse.github.io/wdd230-course/images/l06/wdd230-org.jpg" alt="Hero WebP" class="hero-image" width="800" height="">
+        </picture>
+           <!-- <img id="hero-img" src="images/office3.jpg" alt="People enjoying white water rafting">-->
         </div>
         <section id="hero-msg">
-            
-            <!--<h4>Make Memories with Dry Oar</h4>-->
-            <div class=button-box>
+           <div class=button-box>
                 <a class="book" href="rates.html">Join Us</a>
             </div>
         </section>        
@@ -91,6 +94,8 @@
                     </figure>
                 </div>
                 <hr>
+                <p>Wind: <span id="wind"></span> MPH</p>
+                <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p>
             </section>
             <section class="item3" id="spot">
                 <h2>Spotlights Chamber</h2>
@@ -144,6 +149,6 @@
     <!-- Include JavaScript for dynamic last modified date -->
     <script src="scripts/responsive.js"></script>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
