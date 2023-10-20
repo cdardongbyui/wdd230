@@ -23,12 +23,14 @@ const cardEvent3= document.querySelector("#cardEvent3");
 const header= document.querySelector("#header");
 const herobox= document.querySelector("#hero-box"); 
 const footer = document.querySelector("footer");
+const container = document.querySelector("#container");
 
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🌃")) {
 		main.style.background = "#00ddd0";
 		main.style.color = "#ffffff";
+        container.style.background = "#000000";
         header.style.background='#8e8a8a';
         header.style.color = '#fff';
         
@@ -49,7 +51,7 @@ modeButton.addEventListener("click", () => {
 		main.style.background = "#eee";
 		main.style.color = "#000";
         header.style.background='#E5E5E5';
-
+        container.style.background = "#ffffff";
         weather.style.background ='#ffffff';
 		spot.style.background ='#ffffff';
         spot1.style.background ='#ffffff';
