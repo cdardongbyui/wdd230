@@ -9,7 +9,10 @@
     nav a {
         text-align: center;
     }
-
+    
+    .image-card{
+      width:75% ;
+  }
    
     #hero img {
     width: 100%;
