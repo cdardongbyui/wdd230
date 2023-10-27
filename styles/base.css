@@ -9,12 +9,22 @@
 
 .header_photo{
     background-color: #36516c;
-    display: flex;
+    display: block;
     justify-content: space-around;
     align-items: center;
     color: #ffffff;
     font-size: 50px;
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    padding-top: 4rem;
+  }
+
+  #name_title{
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   header h5{
@@ -22,9 +32,11 @@
   }
 
   #initial-image{
-   width: 200px; 
-   padding: 30px;  
-   padding-left: 200px; 
+    width: 200px;
+		height: 222px;
+   display: block;
+   margin: auto;
+   
 
   } 
 
@@ -36,13 +48,12 @@
 
   #menu {
     font-size: 1.5rem;
-    border: 1px solid rgba(0,0,0,.3);
     padding: .25rem .75rem;
-    background-color: #eee;
-    color: #000;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    color: #000000;
+    display: block;
+    margin: auto;
+    position: relative;
+    
   }
   
   #menu::before {
@@ -142,8 +153,10 @@ section li {
   padding-left: 1rem;
 }
 
-
-
+.label, .visits {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
  .title-card{
     background: #1D4D72;
     text-align: center;
