@@ -332,3 +332,159 @@ font-size: 2rem;
 color: #ffffff;
 font-family:"Great Vibes", serif;
 }
+
+
+/*-----------------------------------*/
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  color: #002a5c;
+  padding: 20px;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Add a hover effect for the images */
+
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 95%; /* Make the sidebar full width on mobile */
+    }
+    .main-content {
+        width: 95%; /* Make the main content full width on mobile */
+    }
+    .main-content img {
+        max-width: 100%; /* Ensure images are responsive on mobile */
+    }
+}
+img[data-src]:hover {
+  transform: scale(1.1); /* You can adjust the scale value for your desired zoom effect */
+  transition: transform 0.3s ease; /* You can adjust the transition duration for the smooth effect */
+}
+
+.user-message {
+  font-weight: bold;
+}
+
+
+.demographics li {
+  text-align: left;
+}
+
+.attractions li {
+  text-align: left;
+}
+
+.calendar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.calendar-header {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+}
+
+.day {
+  text-align: center;
+  padding: 5px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+/* Style individual calendar days as needed */
+.day-cell {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style today's date differently */
+
+.event-day {
+  background-color: #14213d; /* Choose a color for event days */
+  color: #fff; /* Choose a text color for event days */
+}
+
+/* Style today's date differently */
+.today {
+  background-color: #002a5c;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.event-display {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#prev-month {
+  color:#002a5c;
+}
+
+#next-month {
+  color: #002a5c;
+}
+
+/*.discover {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+}*/
+
+.discover div {
+  padding: 10px;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.membershipLevels {
+  margin: 10px;
+}
+
