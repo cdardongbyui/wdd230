@@ -1,0 +1,42 @@
+:root {
+    --main-background-color: #e5e5e5;
+    --form-label-color: #c51c1c;
+    --link-color: #0073e6;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #c51c1c;
+}
+
+form {
+    text-align: center;
+    padding: 20px;
+    color: #c51c1c;
+    max-width: 400px;
+    width: 200%;
+    border: 1px solid #c51c1c; 
+}
+
+label {
+    color: var(--form-label-color);
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
