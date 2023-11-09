@@ -265,7 +265,7 @@ p {
   opacity: 0.7;
 }
 .footer-container{
-    
+    background-color: #bebebe;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto ;
    
@@ -478,13 +478,104 @@ img[data-src]:hover {
   padding: 10px;
 }
 
-.join {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 
 .membershipLevels {
   margin: 10px;
 }
 
+
+
+.join-header{
+  background-color: #7F2629;
+  color: #fff;
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.join-img{
+  
+  text-align: center;
+}
+
+/*------------------------------------------*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: fit-content;
+}
+
+form input, textarea {
+  font-size: 1em;
+  width: 450px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 2px solid #7F2629;
+  border-radius: 10px;
+ 
+  font-weight: 500;
+ 
+}
+
+textarea {
+  height: 250px;
+}
+
+form label {
+  /* font-size: 1.5em; */
+  font-weight: 700;
+  text-align: left;
+  margin: 5px;
+}
+
+label, textarea, select{
+  display: inline-block;
+  /* float: left; */
+  clear: left;
+  width: 450px;
+  text-align: left;
+}
+
+#submit {
+  background-color: #7F2629;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  /* bottom: 300px; */
+  z-index: 5;
+  width: 200px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 15px;
+}
+
+#submit:hover {
+  background-color: #e5e5e5;
+  color: #000;
+}
+
+
+/*-----------------------*/
+.thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.thanks h1, .board h1 {
+  display: block;
+}

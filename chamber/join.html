@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guatemala Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the  Chamber of Commerce">
+    <meta name="author" content="Cristian Dardon">
+    <meta property="og:title" content="Chamber of Commerce Guatemala - Cristian Dardon">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdardongbyui.github.io/wdd230/chamber/images/guatemala_chamber.jpg">
+    <meta property="og:url" content="https://ccg.com.gt/">
+    <link rel="icon" href="../chamber/images/favicon.ico">
+    <!-- Add social media meta settings here -->
+
+    <!-- Link to your CSS file(s) for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+
+</head>
+<body>
+    <header id="header">
+        <!--  <div id="mode">
+          🌃  
+        </div> -->
+        <!-- Navigation menu goes here -->
+        <div id="logo">
+            <a href="index.html"><img src="images/chamber_logo.webp" alt="Pasco Chamber of Commerce Logo"></a>
+            
+        </div>
+        <a href="#" id="hamburger">&#9776;</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="link1">Home</a></li>
+                <li><a href="../chamber/discover.html" id="link2">Discover</a></li>
+                <li><a href="#directory" id="link3">Directory</a></li>
+                <li><a href="#join" id="link4">Join</a></li>
+            </ul>
+        </nav>
+        <section class="socials">
+            <a href="https://www.facebook.com/camaradecomerciodeguatemala"><img src="images/facebook.png" alt="Facebook Logo and Link to our Facebook"></a>
+            <a href="https://www.linkedin.com/company/camara-de-comercio-de-guatemala/?originalSubdomain=gt"><img src="images/linkedin.png" alt="Instagram Logo and Link to our Instagram"></a>
+            
+        </section>
+    </header>
+            
+
+    <main >
+        <div class="container-join">
+           <div class="join-header">
+                <h1>Join Us</h1>
+           </div>
+           <div class="join-img">
+            <img src="../chamber/images/firma.webp" alt="">
+           </div>
+           <div>
+            <form action="thankyou.html" method="get">
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName" required>
+    
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName" required>
+    
+                <label for="position">Title or Position: </label>
+                <input type="text" id="position" name="position" pattern="[A-Za-z\- ]{7,}">
+    
+                <label for="email">Email Address: </label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+    
+                <label for="phone">Mobile Phone Number: </label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="organization">Business/Organization Name: </label>
+                <input type="text" id="organization" name="organization" required>
+    
+                <label for="membershipLevel">Membership Level: </label>
+                <select id="membershipLevel" name="membershipLevel">
+                    <option value="NP">NP Membership (Free)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Business/Organization Description: </label>
+                <textarea id="description" name="description"></textarea>
+    
+                <input type="hidden" id="timestamp" name="timestamp" value="timestamp">
+    
+                <input id="submit" type="submit" value="Submit Form">
+            </form>
+           </div>
+           
+        </div>
+    </main>
+    <footer id="footer">
+         <div class="footer-container">
+            <section class="footer1">
+                <img src="../chamber/images/chamber_logo.png" alt="">    
+                <div class="address">
+                    <h4>Guatemala Chamber of Commerce</h4>
+                    <p>10 Calle 3-80, Zona 1, Guatemala City, Guatemala</p>
+                </div>                        
+            </section>
+            <section class="footer2">
+            <p>&copy; <span id="currentYear"></span> | Cristian Dardon | Guatemala City | Last Modified<span id="lastModified"></span></p> 
+                                       
+            </section>
+            <section class="footer3">
+                <h2>Contact Us...</h2>  
+                <p>info@ccg.gt</p>                          
+            </section>
+         </div>
+            
+    </footer>
+    
+    <!-- Include JavaScript for dynamic last modified date -->
+    <script src="scripts/responsive.js"></script>
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
