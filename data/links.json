@@ -34,15 +34,15 @@
         "lesson": "03",
         "links": [
           {
-            "url": "lesson03/images/combinators.png",
+            "url": "lesson03/03_Learning_Activities.png",
             "title": "CSS Combinators"
           },
           {
-            "url": "https://codepen.io/qjnaef15/pen/abPqWxp",
+            "url": "https://codepen.io/Cristian-Dardon/pen/MWZXYgK",
             "title": "CSS Pseudo Elements"
           },
           {
-            "url": "https://codepen.io/qjnaef15/pen/JjwpJGr",
+            "url": "https://codepen.io/Cristian-Dardon/pen/abPKzvy",
             "title": "Responsive Menu"
           }
         ]
@@ -51,7 +51,7 @@
         "lesson": "04",
         "links": [
           {
-            "url": "https://codepen.io/qjnaef15/pen/wvREePr",
+            "url": "https://codepen.io/Cristian-Dardon/pen/KKbGrav",
             "title": "CSS Pseudo Classes"
           }
         ]
@@ -71,6 +71,10 @@
           {
             "url": "lesson06/images/landscape.webp",
             "title": "WebP"
+          },
+          {
+            "url": "lesson06/responsive-images.html",
+            "title": "Responsive Image Site"
           }
         ]
       },
@@ -83,7 +87,7 @@
           },
           {
             "url": "lesson07/bom.html",
-            "title": "localStorage"
+            "title": "Local Storage"
           }
         ]
       },
@@ -109,11 +113,11 @@
         "links": [
           {
             "url": "lesson09/new-ward-members.json",
-            "title": "JSON"
+            "title": "Json"
           },
           {
             "url": "lesson09/prophets.html",
-            "title": "The Fetch API"
+            "title": "Fetch API"
           }
         ]
       },
@@ -123,6 +127,24 @@
           {
             "url": "#",
             "title": "Activity 10"
+          }
+        ]
+      },
+      {
+        "lesson": "11",
+        "links": [
+          {
+            "url": "#",
+            "title": "Activity 11"
+          }
+        ]
+      },
+      {
+        "lesson": "12",
+        "links": [
+          {
+            "url": "#",
+            "title": "Activity 12"
           }
         ]
       }
