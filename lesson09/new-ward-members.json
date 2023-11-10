@@ -1,0 +1,29 @@
+{
+    "familyName": "Dardon",
+    "moveInDate": "2019-05-22",
+    "familySize": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Jose Dardon",
+        "gender": "Male",
+        "birthdate": "2016-02-23"
+      },
+      {
+        "name": "Dana Dardon",
+        "gender": "Female",
+        "birthdate": "2010-12-06"
+      },
+      {
+        "name": "Paola Arreola",
+        "gender": "Female",
+        "birthdate": "1981-03-10"
+      },
+      {
+        "name": "Cristian Dardon",
+        "gender": "Male",
+        "birthdate": "1987-02-23"
+      }
+    ]
+  }
+  

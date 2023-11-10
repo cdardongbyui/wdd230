@@ -1,0 +1,39 @@
+
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  header {
+    background-color: #7F2629;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    color: black;
+  }
+  
+  /* Style the prophet cards */
+  section {
+    background-color: #e5e5e5af;
+    border: 1px solid #7F2629;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  footer {
+    background-color: #7F2629;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
