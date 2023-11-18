@@ -49,6 +49,10 @@
     box-shadow: 0 0 10px #ccc;
   }
 
+  #join {
+    grid-column: 2;
+    grid-row: 2;
+}
 
 }
 

@@ -1,0 +1,122 @@
+{
+    "members": [
+      {
+        "name": "Company 1",
+        "address": "123 Main St, City, Country",
+        "phone": "+123456789",
+        "website": "https://www.company1.com",
+        "image": "images/comp1.svg",
+        "membership": {
+          "level": "Free",
+          "perks": ["Access to basic events"],
+          "pricing": "Free"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 2",
+        "address": "456 Oak St, Town, Country",
+        "phone": "+987654321",
+        "website": "https://www.company2.com",
+        "image": "images/comp2.svg",
+        "membership": {
+          "level": "Bronze",
+          "perks": ["Access to events and workshops"],
+          "pricing": "$50/month"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 3",
+        "address": "789 Pine St, Village, Country",
+        "phone": "+111223344",
+        "website": "https://www.company3.com",
+        "image": "images/comp3.svg",
+        "membership": {
+          "level": "Silver",
+          "perks": ["Access to all events, workshops, and networking opportunities"],
+          "pricing": "$100/month"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 4",
+        "address": "101 Maple St, Hamlet, Country",
+        "phone": "+445566778",
+        "website": "https://www.company4.com",
+        "image": "images/comp4.svg",
+        "membership": {
+          "level": "Gold",
+          "perks": ["Priority access to all events, workshops, networking opportunities, and special promotions"],
+          "pricing": "$200/month"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 5",
+        "address": "202 Elm St, Suburb, Country",
+        "phone": "+1122334455",
+        "website": "https://www.company5.com",
+        "image": "images/comp5.svg",
+        "membership": {
+          "level": "Free",
+          "perks": ["Access to basic events"],
+          "pricing": "Free"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 6",
+        "address": "303 Birch St, Countryside, Country",
+        "phone": "+9988776655",
+        "website": "https://www.company6.com",
+        "image": "images/comp6.svg",
+        "membership": {
+          "level": "Bronze",
+          "perks": ["Access to events and workshops"],
+          "pricing": "$50/month"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 7",
+        "address": "404 Cedar St, Beachside, Country",
+        "phone": "+7766554433",
+        "website": "https://www.company7.com",
+        "image": "images/comp7.svg",
+        "membership": {
+          "level": "Silver",
+          "perks": ["Access to all events, workshops, and networking opportunities"],
+          "pricing": "$100/month"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 8",
+        "address": "505 Redwood St, Mountain, Country",
+        "phone": "+3344556677",
+        "website": "https://www.company8.com",
+        "image": "images/comp8.svg",
+        "membership": {
+          "level": "Gold",
+          "perks": ["Priority access to all events, workshops, networking opportunities, and special promotions"],
+          "pricing": "$200/month"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 9",
+        "address": "606 Pineapple St, Island, Country",
+        "phone": "+1122334455",
+        "website": "https://www.company9.com",
+        "image": "images/comp9.svg",
+        "membership": {
+          "level": "Free",
+          "perks": ["Access to basic events"],
+          "pricing": "Free"
+        },
+        "otherInfo": "Any additional information"
+      }
+    ]
+  }
+  

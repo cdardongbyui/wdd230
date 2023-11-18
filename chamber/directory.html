@@ -6,7 +6,7 @@
     <title>Guatemala Chamber of Commerce</title>
     <meta name="description" content="Welcome to the  Chamber of Commerce">
     <meta name="author" content="Cristian Dardon">
-    <meta property="og:title" content="Chamber of Commerce Guatemala - Cristian Dardon">
+    <meta property="og:title" content="Guatemala Chamber - Directory">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdardongbyui.github.io/wdd230/chamber/images/guatemala_chamber.jpg">
     <meta property="og:url" content="https://ccg.com.gt/">
@@ -48,53 +48,36 @@
             
         </section>
     </header>
-            
+    <div class="join-header">
+        <h1>Directory</h1>
+   </div>
+   <br>
+    <div>
+        <button onclick="toggleView('grid-view')">Grid View</button>
+        <button onclick="toggleView('list-view')">List View</button>
+    </div>       
+    <br>
+    <main class="directory" id="directory">
+        <!-- Dynamically fill with javascript and json -->
 
-    <main >
-        <div class="container-join">
-           <div class="join-header">
-                <h1>Join Us</h1>
-           </div>
-           <div class="join-img">
-            <img src="../chamber/images/firma.webp" alt="">
-           </div>
-           <div>
-            <form action="thankyou.html" method="get">
-                <label for="firstName">First Name: </label>
-                <input type="text" id="firstName" name="firstName" required>
-    
-                <label for="lastName">Last Name: </label>
-                <input type="text" id="lastName" name="lastName" required>
-    
-                <label for="position">Title or Position: </label>
-                <input type="text" id="position" name="position" pattern="[A-Za-z\- ]{7,}">
-    
-                <label for="email">Email Address: </label>
-                <input type="email" id="email" name="email" required placeholder="example@example.com">
-    
-                <label for="phone">Mobile Phone Number: </label>
-                <input type="tel" id="phone" name="phone" required>
-    
-                <label for="organization">Business/Organization Name: </label>
-                <input type="text" id="organization" name="organization" required>
-    
-                <label for="membershipLevel">Membership Level: </label>
-                <select id="membershipLevel" name="membershipLevel">
-                    <option value="NP">NP Membership (Free)</option>
-                    <option value="Bronze">Bronze Membership</option>
-                    <option value="Silver">Silver Membership</option>
-                    <option value="Gold">Gold Membership</option>
-                </select>
-
-                <label for="description">Business/Organization Description: </label>
-                <textarea id="description" name="description"></textarea>
-    
-                <input type="hidden" id="timestamp" name="timestamp" value="timestamp">
-    
-                <input id="submit" type="submit" value="Submit Form">
-            </form>
-           </div>
-           
+        <div class="table-view" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Website</th>
+                        <th>Membership Level</th>
+                        <th>Perks</th>
+                        <th>Pricing</th>
+                        <th>Other Info</th>
+                    </tr>
+                </thead>
+                <tbody id="table-container">
+                    <!-- Table rows will be dynamically added here -->
+                </tbody>
+            </table>
         </div>
     </main>
     <footer id="footer">
@@ -123,5 +106,6 @@
     <script src="scripts/discover.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>

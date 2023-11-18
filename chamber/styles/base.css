@@ -579,3 +579,67 @@ label, textarea, select{
 .thanks h1, .board h1 {
   display: block;
 }
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Grid view styles */
+@media screen and (min-width: 1200px) {
+  .grid-view {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .grid-view {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      background-color: #fff;
+      color: #002a5c;
+  }
+}
+
+/* Table view styles */
+.table-view table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-view th, .table-view td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Hide image in list view and table view */
+.list-view .card img,
+.table-view .card img {
+  display: none;
+}
+
+/* Display information in one line for list view */
+.list-view .card,
+.table-view .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list-view .card > *,
+.table-view .card > * {
+  flex: 0 0 48%; /* Adjust as needed */
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+
+/* Button styles */
+button {
+  margin: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
