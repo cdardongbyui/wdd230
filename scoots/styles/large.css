@@ -521,13 +521,13 @@ main.thanks {
 }
 
 .thanks h1 {
-  color: var(--ucla-blue);
+  color: #eb4755;
 }
 
 .thanks p {
   margin: 10px 0;
   font-size: 18px;
-  color: var(--russian-violet);
+  color: #000000;
 }
 
 #back {
