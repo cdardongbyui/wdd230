@@ -1,0 +1,108 @@
+@media screen and (max-width: 430px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr auto;
+    gap: 0px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    grid-row: 1;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #hamburger {
+    grid-row: 2;
+    display: block;
+    font-size: 3.25em;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  nav {
+    grid-row: 3;
+    text-align: center;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+
+  nav li {
+    margin-bottom: 30px;
+    font-size: 1em;
+  }
+
+  .cta-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero {
+    position: relative;
+  }
+
+  .hero img {
+    width: 390px;
+    height: 200px;
+  }
+
+  .cta {
+    font-size: 1em;
+    padding: 15px 15px;
+  }
+
+  .types-rentals{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+  }
+
+  .weather-map-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+  }
+
+  .forecast-item {
+    padding: 2px;
+    margin: 5px;
+  }
+
+  .map iframe {
+    width: fit-content;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .location-1 {
+    order: -2;
+  }
+
+  .map-left {
+    order: -1;
+  }
+
+  .location-2 {
+    order: 0;
+  }
+
+  .map-right {
+    order: 1;
+  }
+
+  .contact-form {
+    grid-column: span 1;
+    max-width: 500px;
+  }
+}

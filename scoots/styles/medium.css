@@ -1,0 +1,45 @@
+@media screen and (max-width: 975px) {
+    nav a {
+        color: var(--light-red);
+        text-decoration: none;
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px; 
+        margin: 0 10px; 
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    .hero img {
+        width: 940px
+    }
+    
+    .weather-map-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width:fit-content;
+    }
+
+
+    #three-day-forecast {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    nav a {
+        font-size: 1.1em;
+    }
+
+    .hero img {
+        width: 750px;
+    }
+
+    .map iframe{
+        width: 690px;
+    }
+}

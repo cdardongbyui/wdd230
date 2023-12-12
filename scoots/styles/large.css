@@ -1,0 +1,684 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&display=swap");
+
+/* CSS HEX */
+:root {
+  /*--mint-green: #e3fded;*/
+  --mint-green: #ffffff;
+  --russian-violet: rgb(0, 0, 0);
+  --turquoise: #E3FDED;
+  --ucla-blue: #2374abff;
+  --light-red: #34D085;
+}
+
+/* CSS HSL */
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.light-mode {
+  background-color: var(--mint-green);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+/* Header */
+header {
+  background-color: var(--russian-violet);
+  color: var(--light-red);
+}
+
+.menu {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#mode-icon {
+  width: 30px;
+  height: 36px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--turquoise);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--russian-violet);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--light-red);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--turquoise);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#hamburger {
+  color: var(--light-red);
+  text-decoration: none;
+  font-size: 2.25em;
+  margin-left: 10px;
+  display: none;
+}
+
+nav {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+nav a {
+  color: var(--light-red);
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+nav ul li a:hover {
+  color: var(--mint-green); /* Change the hover background color as needed */
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo img {
+  /* Style logo */
+  width: 300px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+/* Main - Home */
+
+.home {
+    background-color: var(--mint-green);
+}
+
+/* Hero Section Styles */
+.hero {
+  position: relative;
+}
+
+@media screen and (max-width: 1550px) {
+  .hero img {
+    width: 1515px;
+  }
+}
+
+.cta-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the CTA Button */
+.cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  background-color: var(--light-red);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background-color: var(--russian-violet);
+}
+
+/* Home Page Styles */
+/* Summary Section Styles */
+.summary {
+  background-color: var(--mint-green);
+  padding: 40px 0;
+}
+
+.summary-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.summary h2 {
+  color: var(--ucla-blue);
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.summary p {
+  color: var(--russian-violet);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.summary li {
+  color: var(--russian-violet);
+  text-align: left;
+  padding: 10px;
+}
+
+.types-rentals{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.rental-s{
+
+  display: block;
+  margin: auto;
+  justify-content: center;
+ 
+}
+
+.img-section{
+  display:block;
+  margin:auto;
+
+}
+
+.retal-s, h4{
+  text-align: center;
+}
+
+
+
+.weather-map-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: #f4f4f6;
+}
+
+#weather,
+.map {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: var(--ucla-blue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: center;
+  background-color: #eb4755;
+}
+
+#weather,
+.map h2 {
+  color: ghostwhite;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#alerts {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+#one-day-forecast {
+  margin-top: 40px;
+}
+
+#temperature {
+  background-color: var(--light-red);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--russian-violet);
+  width: auto;
+}
+
+#one-day-forecast .forecast-item {
+  background-color: var(--light-red);
+  color: ghostwhite;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px var(--russian-violet);
+  text-align: center;
+  width: auto;
+}
+
+/* Rental Page Styles */
+.rentals {
+  padding: 0 5rem 3rem 5rem;
+  background-color: var(--mint-green);
+}
+
+.rentals th{
+  color: black;
+}
+
+.rentals td{
+  color: #eb4755;
+}
+
+.preface {
+  text-align: center;
+  padding: 50px;
+}
+
+.preface-info {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--turquoise);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--russian-violet);
+}
+
+.preface-info h2 {
+  color: var(--russian-violet);
+}
+
+.preface-info p {
+  color: ghostwhite;
+}
+
+.rental-gallery {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.rental-item {
+  
+  width: 200px;
+  margin: 10px;
+  background-color:#eb4755;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.rental-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid var(--russian-violet);
+}
+
+.rental-item h3 {
+  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+  color: ghostwhite;
+}
+
+.price-table {
+  margin-top: 20px;
+}
+
+.price-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid var(--russian-violet);
+  padding: 8px;
+  text-align: left;
+}
+
+.price-table th {
+  background-color: var(--light-red);
+}
+
+.table-label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.column-header {
+  font-weight: bold;
+}
+
+.price-table tr:nth-child(even) {
+  background-color: var(--turquoise); 
+}
+
+.price-table tr:nth-child(odd) {
+  background-color: var(--mint-green-grad); 
+}
+
+/* Reservation Page Styles */
+main.reservations {
+  padding:  4rem 0 4rem 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.reservation-form {
+  background-color: var(--mint-green);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px var(--russian-violet);
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #eb4755;
+}
+
+.reservation input{
+  background-color: #eb4755;
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+  
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+select {
+  appearance: none;
+}
+
+button {
+  background-color: var(--light-red);
+  color: var(--russian-violet);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--russian-violet);
+  color: var(--light-red);
+}
+
+#agreement-checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#agreement-checkbox {
+  margin-right: 10px;
+  transform: scale(1.5);
+}
+
+#agreement-label {
+  margin: 0;
+}
+
+/* Thank You Page Styles */
+main.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+}
+
+.thanks h1 {
+  color: var(--ucla-blue);
+}
+
+.thanks p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: var(--russian-violet);
+}
+
+#back {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: var(--light-red);
+  color: var(--russian-violet);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#back:hover {
+  background-color: var(--russian-violet);
+  color: var(--light-red);
+}
+
+/* Contact Us Page Styles */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-top: 40px;
+}
+
+.info section {
+  background-color: var(--light-red);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px var(--russian-violet);
+}
+
+.info h2 {
+  color: var(--russian-violet-grad);
+  text-align: center;
+}
+
+.info address {
+  font-style: normal;
+  color: var(--russian-violet);
+}
+
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-2 iframe {
+  width: 100%;
+  border: 0;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #eb4755;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px var(--russian-violet);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form h1 {
+  color: var(--russian-violet);
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  color: var(--russian-violet);
+}
+
+input,
+textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid var(--mint-green);
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: var(--russian-violet);
+  color: var(--mint-green);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--ucla-blue);
+  color: ghostwhite;
+}
+
+/* Footer */
+footer {
+  background-color: var(--russian-violet);
+  color: var(--light-red);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  gap: 25px;
+}
+
+.social-media a img {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+}
+
+address {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#copyright h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#copyright p {
+  margin: 5px 0;
+  font-size: 1em;
+}

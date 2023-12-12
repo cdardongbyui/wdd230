@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Scoots Cozumel" />
+    <meta name="author" content="Cristian Joaquin Dardon Godoy" />
+    <meta
+      property="og:title"
+      content="Scooter - Cristian Joaquin Dardon Cozumel"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://static.blog.bolt.eu/LIVE/wp-content/uploads/2023/11/01111809/Paramedics-on-bolt-scooters-Poland-1024x536.jpg"
+    />
+    <meta property="og:url" content="https://scootsrentalsofcozumel.com" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+ 
+    <title>Scoots Rentals</title>
+  </head>
+  <body class="light-mode">
+    <header>
+      <header>
+        <!-- Navigation and Logo -->
+        <div class="menu">
+          <a href="#" id="hamburger">&#9776;</a>
+          <div class="logo">
+              
+              <a href="index.html"
+                ><img src="images/logo.jpg" alt="Scoots Logo"
+              /></a>
+            </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rentals.html">Rentals</a></li>
+              <li><a href="reservations.html">Reservations</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+  
+    </header>
+
+    <main class="rentals">
+      
+
+        <div class="rental-gallery">
+          <!-- Honda Metropolitan (49cc) -->
+          <div class="rental-item">
+            <img src="images/metro.webp" alt="Honda Metropolitan (49cc)" />
+            <h3>Honda Metropolitan (49cc)</h3>
+          </div>
+
+          <!-- Honda Dio (110cc) -->
+          <div class="rental-item">
+            <img src="images/dio.webp" alt="Honda Dio (110cc)" />
+            <h3>Honda Dio (110cc)</h3>
+          </div>
+
+          <!-- Honda PCX150 (149cc) -->
+          <div class="rental-item">
+            <img src="images/pcx150.webp" alt="Honda PCX150 (149cc)" />
+            <h3>Honda PCX150 (149cc)</h3>
+          </div>
+
+          <!-- Honda Pioneer 1000 -->
+          <div class="rental-item">
+            <img src="images/pioneer.webp" alt="Honda Pioneer 1000" />
+            <h3>Honda Pioneer 1000</h3>
+          </div>
+
+          <!-- Jeep Wrangler - 4 door manual with A/C -->
+          <div class="rental-item">
+            <img
+              src="images/4door.webp"
+              alt="Jeep Wrangler - 4 door manual with A/C"
+            />
+            <h3>Jeep Wrangler - 4 door manual with A/C</h3>
+          </div>
+
+          <!-- Jeep Wrangler - 2 door - open air - manual -->
+          <div class="rental-item">
+            <img
+              src="images/2door.webp"
+              alt="Jeep Wrangler - 2 door - open air - manual"
+            />
+            <h3>Jeep Wrangler - 2 door - open air - manual</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices">
+        <div class="price-table">
+          <div class="table-label">Reservation Prices</div>
+          <table>
+            <thead>
+              <tr>
+                <th>Rental Type</th>
+                <th class="column-header">Max Persons</th>
+                <th>
+                  <div class="column-header">Half Day</div>
+                </th>
+                <th>
+                  <div class="column-header">Full Day</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="reservationTableBody"></tbody>
+          </table>
+        </div>
+
+        <div class="price-table">
+          <div class="table-label">Walk-In Prices</div>
+          <table>
+            <thead>
+              <tr>
+                <th>Rental Type</th>
+                <th class="column-header">Max Persons</th>
+                <th>
+                  <div class="column-header">Half Day</div>
+                </th>
+                <th>
+                  <div class="column-header">Full Day</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="walkInTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="#" target="_blank"
+          ><img src="images/facebook.svg" alt="Facebook"
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="images/insta.svg" alt="Instagram"
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="images/twitter.svg" alt="Twitter"
+        /></a>
+      </div>
+
+      <!-- Contact Information -->
+      <address>
+        123 Ocean View Street<br />
+        San Miguel de Cozumel<br />
+        77600 Quintana Roo<br />
+        Mexico
+      </address>
+
+      <!-- Copyright Info-->
+      <div id="copyright">
+        <p>
+          &copy; <span id="currentYear"></span> | Cristian Joaquin Dardon | Guatemala, Guatemala
+        </p>
+        <p><span id="lastModified"></span></p>
+      </div>
+    </footer>
+    <script src="scripts/responsive.js"></script>
+    <script src="scripts/rentals.js"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Scoots Cozumel" />
+    <meta name="author" content="Cristian Joaquin Dardon Godoy" />
+    <meta
+      property="og:title"
+      content="Scooter - Cristian Joaquin Dardon Cozumel"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://static.blog.bolt.eu/LIVE/wp-content/uploads/2023/11/01111809/Paramedics-on-bolt-scooters-Poland-1024x536.jpg"
+    />
+    <meta property="og:url" content="https://scootsrentalsofcozumel.com" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    
+   
+    <title>Scoots Rentals</title>
+  </head>
+  <body class="light-mode">
+    <header>
+      <!-- Navigation and Logo -->
+      <div class="menu">
+        <a href="#" id="hamburger">&#9776;</a>
+        <div class="logo">
+            
+            <a href="index.html"
+              ><img src="images/logo.jpg" alt="Scoots Logo"
+            /></a>
+          </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        
+      </div>
+    </header>
+
+    <main class="reservations">
+      <div class="reservation-form">
+        <h2>Reservation Form</h2>
+        <form action="thanks.html" method="post">
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="form-group">
+            <label for="period">Period:</label>
+            <input
+              type="text"
+              id="period"
+              name="period"
+              placeholder="E.g., 3 days"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="rental-type">Rental Type:</label>
+            <select id="rental-type" name="rental-type" required>
+              <option value="Honda Metropolitan (49cc)">
+                Honda Metropolitan (49cc)
+              </option>
+              <option value="Honda Dio (110cc)">Honda Dio (110cc)</option>
+              <option value="Honda PCX150 (149cc)">Honda PCX150 (149cc)</option>
+              <option value="Honda Pioneer 1000">Honda Pioneer 1000</option>
+              <option value="Jeep Wrangler - 4 door manual with A/C">
+                Jeep Wrangler - 4 door manual with A/C
+              </option>
+              <option value="Jeep Wrangler - 2 door - open air - manual">
+                Jeep Wrangler - 2 door - open air - manual
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="home">Home State or Country:</label>
+            <input type="text" id="home" name="home" required />
+          </div>
+
+          <div class="form-group">
+            <label for="cruise-line">Cruise Line (if applicable):</label>
+            <input type="text" id="cruise-line" name="cruise-line" />
+          </div>
+
+          <div class="form-group">
+            <label for="accommodations">Special Accommodations/Comments:</label>
+            <textarea
+              id="accommodations"
+              name="accommodations"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <p>Rental Services and Agreements:</p>
+            <ul>
+              <li>
+                A $50 security deposit is required to confirm reservations.
+              </li>
+              <li>
+                A valid driver's license is required in hand at the time of
+                rental.
+              </li>
+              <li>
+                No one under the age of 12 years of age is allowed to ride on
+                the scooters.
+              </li>
+              <li>Fuel charge is not included.</li>
+              <li>Unlimited mileage.</li>
+              <li>Liability insurance is included.</li>
+              <li>Damage insurance is available for purchase.</li>
+              <li>
+                Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
+              </li>
+              <li>
+                Payment via Google Pay, Apple Pay, cash, credit card, debit
+                card, or Venmo.
+              </li>
+              <li>Rentals may be returned to either physical location.</li>
+            </ul>
+          </div>
+
+          <div class="form-group" id="agreement-checkbox-group">
+            <input
+              type="checkbox"
+              id="agreement-checkbox"
+              name="agreement"
+              required
+            />
+            <label id="agreement-label" for="agreement-checkbox"
+              >I agree to the rental service agreements</label
+            >
+          </div>
+
+          <button type="submit">Submit Reservation</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="#" target="_blank"
+          ><img src="images/facebook.svg" alt="Facebook"
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="images/insta.svg" alt="Instagram"
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="images/twitter.svg" alt="Twitter"
+        /></a>
+      </div>
+
+      <!-- Contact Information -->
+      <address>
+        123 Ocean View Street<br />
+        San Miguel de Cozumel<br />
+        77600 Quintana Roo<br />
+        Mexico
+      </address>
+
+      <!-- Copyright Info-->
+      <div id="copyright">
+        <p>
+          &copy; <span id="currentYear"></span> | Cristian Joaquin Dardon | Guatemala, Guatemala
+          
+        </p>
+        <p><span id="lastModified"></span></p>
+      </div>
+    </footer>
+    <script src="scripts/responsive.js"></script>
+  </body>
+</html>
